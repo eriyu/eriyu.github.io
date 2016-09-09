@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=device-dpi">
+        <link rel="stylesheet" type="text/css" href="../lib/jquery-mobile/jquery.mobile.min.css?rev=1473417876000">
+        <link rel="stylesheet" type="text/css" href="../lib/jquery-mobile/jquery.mobile.theme.min.css?rev=1473417876000">
+        <link rel="stylesheet" type="text/css" href="../css/singleFundInfo.min.css?rev=1473417881000">
+        <title></title>
+    </head>
+    <body>
+        <div data-role="page" id="page-sfund-info">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false">
+                <a href="#" class="ui-btn ui-btn-b ui-icon-carat-l ui-btn-icon-left ui-nodisc-icon ui-btn-icon-notext" data-rel="back">Back</a>
+                <h1>基金簡介</h1>
+                <a href="#" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right ui-nodisc-icon ui-btn-icon-notext" id="btn-home">Home</a>
+                <div data-role="header-content">
+                    <div class="table-layout">
+                        <div class="columns-container">
+                            <div class="column" data-role="fundtitle" id="shortname"></div>
+                            <div class="column text-right">
+                                <div id="fav-button" class="hide icon-fav"></div>
+                                <img id="goto-button-block" class="inline-block" src="../img/goto-button-block.png" height="32" width="32">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-role="moneytype"></div> 
+                </div>
+            </div>
+            <div data-role="content">
+                <div id="result-block">
+                    <div data-role="headline">
+                        <select data-mini="true" data-icon="carat-d" id="select-fund">
+                        </select>
+                    </div>
+                    <table data-role="table"></table>
+                    <div id="button-block" class="hide">
+                        <button data-role="button" data-theme="reset" class="nomura-button" id="btn-fundMonth">基金月報</button>
+                        <button data-role="button" data-theme="reset" class="nomura-button" id="btn-fnr">基金特色與風險指標</button>
+                        <button data-role="button" data-theme="reset" class="nomura-button" id="btn-report">基金報告</button>
+                        <button data-role="button" data-theme="reset" class="nomura-button" id="btn-holding">基金持股</button>
+                        <button data-role="button" data-theme="reset" class="nomura-button" id="btn-sff">檔案下載</button>
+                        <button data-role="button" data-theme="reset" class="nomura-button" id="btn-sfnw">淨值走勢</button>
+                        <button data-role="button" data-theme="reset" class="nomura-button" id="btn-sfa">績效走勢</button>
+                    </div>
+                    <div id="warning-block" class="numura-warning"></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../lib/jquery/jquery.min.js?rev=1473417876000"></script>
+        <script type="text/javascript" src="../lib/jquery-mobile/jquery.mobile.min.js?rev=1473417876000"></script>
+        <script type="text/javascript" src="../lib/lodash/lodash.min.js?rev=1473417876000"></script>
+        <script type="text/javascript" src="../lib/xss/xss.min.js?rev=1473417876000"></script>
+        <script type="text/javascript" src="../js/utils/date.util.min.js?rev=1473417882000"></script>
+        <script type="text/javascript" src="../js/utils/constants.min.js?rev=1473417882000"></script>
+        <script type="text/javascript" src="../js/utils/mitake.extend.min.js?rev=1473417882000"></script>
+        <script type="text/javascript" src="../js/plugin/jquery.nomura.min.js?rev=1473417882000"></script>
+        <script type="text/javascript" src="../js/fundNetWorth/singleFundInfo.min.js?rev=1473417882000"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', Constants.gaTrackingNumber, 'auto');
+            ga('send', 'pageview', {'title': 'fundIntro'});
+        </script>        
+    </body>
+</html>

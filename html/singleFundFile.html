@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=device-dpi">
+        <link rel="stylesheet" type="text/css" href="../lib/jquery-mobile/jquery.mobile.min.css?rev=1473417876000">
+        <link rel="stylesheet" type="text/css" href="../lib/jquery-mobile/jquery.mobile.theme.min.css?rev=1473417876000">
+        <link rel="stylesheet" type="text/css" href="../css/singleFundFile.min.css?rev=1473417881000">
+        <title></title>
+    </head>
+    <body>
+        <div data-role="page" id="page-sff">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false">
+                <a href="#" class="ui-btn ui-btn-b ui-icon-carat-l ui-btn-icon-left ui-nodisc-icon ui-btn-icon-notext" data-rel="back">Back</a>
+                <h1>檔案下載</h1>
+                <a href="#" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right ui-nodisc-icon ui-btn-icon-notext" id="btn-home">Home</a>
+                <div data-role="header-content">
+                    <div class="column" data-role="fundtitle" id="shortname"></div>
+                    <div data-role="moneytype"></div>                
+                </div>            
+            </div>
+            <div data-role="content">
+                <div id="result-block">
+                    <table id="table-file">
+                        <tr>
+                            <td data-role="download" data-type="A">
+                                <img src="../img/download-open.png">
+                                <div>公開說明書</div>
+                            </td> 
+                            <td data-role="download" data-type="C">
+                                <img src="../img/download-chart.png">
+                                <div>基金月報</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-role="download" data-type="B">
+                                <img src="../img/download-special.png">
+                                <div>投資人須知(專屬)<br>/公開說明書(簡式)</div>
+                            </td>
+                            <td data-role="download" data-type="D">
+                                <img src="../img/download-general.png">
+                                <div>投資人須知(一般)</div>
+                            </td>
+                        </tr>                        
+                    </table>
+                </div>
+                <div id="warning-block" class="numura-warning"></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="../lib/jquery/jquery.min.js?rev=1473417876000"></script>
+        <script type="text/javascript" src="../lib/jquery-mobile/jquery.mobile.min.js?rev=1473417876000"></script>
+        <script type="text/javascript" src="../lib/lodash/lodash.min.js?rev=1473417876000"></script>
+        <script type="text/javascript" src="../lib/xss/xss.min.js?rev=1473417876000"></script>
+        <script type="text/javascript" src="../js/utils/date.util.min.js?rev=1473417882000"></script>
+        <script type="text/javascript" src="../js/utils/constants.min.js?rev=1473417882000"></script>
+        <script type="text/javascript" src="../js/utils/mitake.extend.min.js?rev=1473417882000"></script>
+        <script type="text/javascript" src="../js/plugin/jquery.nomura.min.js?rev=1473417882000"></script>
+        <script type="text/javascript" src="../js/fundNetWorth/singleFundFile.min.js?rev=1473417882000"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', Constants.gaTrackingNumber, 'auto');
+            ga('send', 'pageview', {'title': 'fundDocument'});
+        </script>         
+    </body>
+</html>

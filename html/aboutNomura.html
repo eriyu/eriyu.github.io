@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=device-dpi">
+        <link rel="stylesheet" type="text/css" href="../lib/jquery-mobile/jquery.mobile.min.css?rev=1473417876000">
+        <link rel="stylesheet" type="text/css" href="../lib/jquery-mobile/jquery.mobile.theme.min.css?rev=1473417876000">
+        <link rel="stylesheet" type="text/css" href="../css/aboutNomura.min.css?rev=1473417881000">
+        <style>
+            ul{
+                list-style: disc;
+                margin-left: 20px;             
+            }
+            .img-center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }        
+            .content-about { //#content_box
+                width: 100%; //640px;
+                padding-right: 20px;
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-bottom: 30px;
+                background-color: #FFFFFF;
+                color: #333;                              
+            }
+            #chinese{
+                font-family: "微軟正黑體";
+                font-size: 16px;
+                line-height: 25px;                
+                text-align: justify;                
+            }
+            #english{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                line-height: 23px;              
+            }            
+            .content_inner {
+                margin-top: 20px;
+            }
+            .content_inner_a{
+                background-color: #EFEFEF;
+                padding: 20px;                
+            }
+            .content_inner_b,.content_inner_c{
+                width: 100%;
+            }
+            .content_inner_b table{
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+            .content_inner_b table td{
+                padding-left: 20px;
+            }                        
+            .title_red {
+                font-weight: bolder;
+                color: #cc0000;
+                line-height: 40px;
+            }            
+        </style>        
+        <title></title>
+    </head>
+    <body>
+        <div data-role="page" id="page-about">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false">
+                <a href="#" class="ui-btn ui-btn-b ui-icon-carat-l ui-btn-icon-left ui-nodisc-icon ui-btn-icon-notext" id="btn-back">Back</a>
+                <h1>公司簡介</h1>
+                <a href="#" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right ui-nodisc-icon ui-btn-icon-notext" id="btn-home">Home</a>            
+            </div>
+            <div data-role="content">
+                <div data-role="tabs" id="tabs-about">
+                  <div data-role="navbar">
+                    <ul>
+                      <li>
+                        <a href="#chinese" data-ajax="false" class="tab-button ui-btn-active">
+                            <div class="button-text">中文簡介</div>
+                        </a>
+                    </li>
+                      <li>
+                        <a href="#english" data-ajax="false" class="tab-button">
+                            <div class="button-text">English</div>
+                        </a>
+                    </li>
+                    </ul>
+                  </div>
+                  <div id="chinese" data-lang="ch" class="content-about">
+                    <span class="title_red">野村投信</span>
+                    <br> 
+                    野村投信(原ING安泰投信)於1998年成立，2006年與荷銀投信合併。2014年4月，野村資產管理及香港Allshores集團收購ING安泰投信後，於10月更名為野村投信。
+                    <br>
+                    <div class="content_inner content_inner_a">
+                        <span class="title_red">兩大承諾</span>
+                        <ul>
+                            <li>
+                                台灣團隊不變–原ING安泰投信工作團隊持續為您提供優質理財建議與服務。
+                            </li>
+                            <li>
+                                產品服務不變–涵括商品多元，包括市場知名的的高股息系列及高收益債境內外基金，我們也是台灣最大的基金諮詢、代理平台之一。境外基金方面，我們擔任 NN (L) 系列基金、天達(Investec)系列基金與荷寶(Robeco)系列基金之在台總代理，以及鋒裕(PIONEER)、駿利(Janus)、安本環球(Aberdeen)與瑞銀(UBS)之銷售機構。 
+                            </li>
+                        </ul>
+                        <span class="title_red">更多資源</span><br> 
+                            新的股東成員包括野村資產管理–為野村控股集團內負責資產管理業務之核心企業，是日本最大的共同基金公司。在日本的零售與法人（含退休基金）業務雙居領銜地位。國際上，野村資產管理在全球投資業舉足輕重，並已在亞洲、歐洲及美國等各地設立辦公室。野村資產管理獨具慧眼地以亞洲為根基，且透過多元化產品線來維繫並強化全球投資者信心。與野村資產管理合資的Allshores集團，則是以香港為根基，聚焦於金融服務，透過與國際領導級企業及知名業界專業人士合作建立區域內之企業布局。兩強聯手，將打造野村投信成為台灣最國際化的資產管理業者之一。
+                    </div>
+                    <div class="content_inner content_inner_b">
+                        <span class="title_red">兩大主要股東介紹</span>
+                        <table>
+                            <tr>
+                                <td valign="top">
+                                  <span class="title_red">野村資產管理簡介</span>
+                                   <hr noshade="noshade" color="#CCCCCC" style="margin-top:0px">
+                                  <ul>
+                                      <li>日本知名投資管理機構之一，全球15個服務據點。</li>
+                                      <li>資資產管理規模高達3,380億美元。</li>
+                                      <li>同時服務機構法人與一般客戶。</li>
+                                      <div style=" font-size:11px;line-height:10px;margin:16px 0;">
+                                        資料來源:野村資產管理；2015/12/31
+                                      </div>
+                                  </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                  <span class="title_red">野村投信LOGO</span>
+                                  <hr noshade="noshade" color="#CCCCCC" style="margin-top:0px">
+                                  
+                                  <img class="img-center" src="../img/site-logo.png" width="191">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" style="padding-right:">
+                                  <span class="title_red">Allshores集團簡介</span>
+                                   <hr noshade="noshade" color="#CCCCCC" style="margin-top:0px">
+                                  <ul>
+                                    <li>透過其香港子公司Alpha Magnus Limited持有野村投信25%股權。</li>
+                                    <li>由野村投信現任董事長Ashwin Mehta發起創立，他亦為前任總經理。</li>
+                                    <li>其所指派並當選野村投信董事之法人代表在金融服務業之經驗合計超過60年，並歷任高階區域主管職務。</li>
+                                  </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="content_inner content_inner_c">
+                        <span class="title_red">公司得獎紀錄</span>
+                        <br>
+                        <table width="100%">
+                            <tr>
+                                <td style=" font-size: 15px; line-height: 1.7em; padding: 0px 7px 7px 7px; color: #333;">
+                                    <table width="100%" style=" border: #ccc 1px solid; border-collapse: collapse;">
+                                        <tr>
+                                            <td style=" font-size: 13px; color:  #fff; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background:#CE1F24; text-align: center; line-height: 1.7em;">年度</td>
+                                            <td style=" font-size: 14px; color:  #fff; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #CE1F24; line-height: 1.7em;text-align: center;">獎項 / 頒獎單位</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="15%" rowspan="4" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2016</td>
+                                            <td width="85%" style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">混合型團隊大獎</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background:  #999999">2016 理柏台灣基金獎 (Lipper Fund Award Taiwan)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">
+                                                台灣區最佳新基金公司(Taiwan Best Newcomer)<br>
+                                                台灣區最佳創新產品獎(Taiwan Most Innovative Product)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background:  #999999">亞洲資產管理雜誌 (Asia Asset Management)</td>
+                                        </tr>                                                                                
+                                        <tr>
+                                            <td width="15%" rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2015</td>
+                                            <td width="85%" style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">混合型團隊大獎</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background:  #999999">2015理柏台灣基金獎 (Lipper Fund Award Taiwan) </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2014</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">混合型團隊大獎</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background:  #999999">2014 理柏台灣基金獎 (Lipper Fund Award Taiwan) </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2012</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">台灣最佳機構法人基金公司獎(Taiwan Best Institutional House)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background:  #999999">亞洲資產管理雜誌 (Asia Asset Management) </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2011</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">台灣最佳機構法人基金公司獎(Taiwan Best Institutional House)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background:  #999999">亞洲資產管理雜誌 (Asia Asset Management) </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2010</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">台灣最佳機構法人基金公司獎(Taiwan Best Institutional House)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background:  #999999">亞洲資產管理雜誌 (Asia Asset Management) </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2009</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">台灣最佳機構法人基金公司獎(Taiwan Best Institutional House) 最佳台灣社區服務獎(Taiwan Best Community Service) </td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background:  #999999">亞洲資產管理雜誌 (Asia Asset Management) </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff;text-align: center; line-height: 1.7em;">2008</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">最佳台灣基金公司獎(Taiwan Fund House of the year) 台灣股票型一年期最佳績效(Taiwan Equities One Year Performance) </td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background: #999999">亞洲投資管理雜誌 (AsianInvestor) </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff;text-align: center; line-height: 1.7em;">2007</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">最佳台灣基金公司獎(Taiwan Fund House of the year)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background:  #999999">亞洲投資管理雜誌 (AsianInvestor) </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2006</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">最佳機構法人資產管理成長獎(Most Improved Institutional fund house)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background: #999999">亞洲資產管理雜誌 (Asia Asset Management) </td>
+                                        </tr>
+                                    </table>
+                                    <span style=" font-size:11px;line-height:10px; margin-top:15px;">
+                                        資料整理：理柏/亞洲資產管理雜誌/亞洲投資管理雜誌/野村投信<br>資料日期：2016/03
+                                    </span>    
+                                </td>
+                            </tr>
+                        </table>
+                    </div>                                                                  
+                  </div>
+                  <div id="english" data-lang="en" class="content-about">
+                    <span class="title_red">Nomura SITE</span>
+                    <br> 
+                    Nomura SITE (previous ING SITE) was established in 1998. It merged with ABN AMRO SITE in 2006. Japanese asset manager, Nomura Asset Management Co., Ltd. and Hong Kong based Allshores Group acquired ING SITE in April 2014, and renamed it Nomura Asset Management Taiwan Limited (“Nomura SITE”) in October 2014.
+                    <br>
+                    <div class="content_inner content_inner_a">
+                        <span class="title_red">Two things remain the same</span>
+                        <ul>
+                            <li>
+                                Same local team – We continue to provide investment solutions and services.
+                            </li>
+                            <li>
+                                Same products –The existing product lineup includes well-known high dividend and high yield on/offshore funds. We are one of the largest asset management and distribution franchise mutual fund in Taiwan. As for offshore funds, we are the MA of NN (L) funds, Investec funds and Robeco funds, and retain sales agency of PIONEER, Janus, Aberdeen and UBS.
+                            </li>
+                        </ul>
+                        <span class="title_red">More resources</span><br> 
+                        Nomura Asset Management Co., Ltd. (NAM), one of our new shareholders, is the core company within the Asset Management Division of the Nomura Group, and is the largest mutual fund corporation in Japan. In Japan, NAM has a leadership position in both retail and institutional business (including pension funds). Internationally, NAM has built a strong presence in the global investment industry, and has established a network of offices across Asia, Europe and the Americas. Uniquely positioned as a recognized global financial institution headquartered in Asia, NAM aims to retain and increase the trust of investors around the world with its various products. Allshores, the other partner in the joint venture, is a Hong Kong based group which is partnering with leading international companies and well known industry professionals and building a portfolio of businesses around the region, with a primary focus on financial services. The two will help Nomura SITE become one of the most internationalized asset managers in Taiwan.
+                    </div>
+                    <div class="content_inner content_inner_b">
+                        <span class="title_red">Two Shareholders</span>
+                        <table>
+                            <tr>
+                                <td valign="top">
+                                    <span class="title_red">NAM Profile</span>
+                                    <hr noshade="noshade" color="#CCCCCC" style=" margin-top:0px">
+                                    <ul>
+                                        <li>
+                                            Well-known Japanese investment companyin 15 offices around the globe.
+                                        </li>
+                                        <li>
+                                            AUM: USD 338 billion.
+                                        </li>
+                                        <li>
+                                            Serves institutional and retail investors. 
+                                        </li>
+                                        <div style=" font-size:11px;line-height:10px;margin:16px 0;">
+                                            (Source: Nomura Asset Management, Date: 2015/12/31) 
+                                        </div>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <span class="title_red">NOMURA SITE LOGO</span>
+                                    <hr noshade="noshade" color="#CCCCCC" style=" margin-top:0px">
+                                    <img class="img-center" src="../img/site-logo.png" width="191">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <span class="title_red">AllshoresProfile</span>
+                                    <hr noshade="noshade" color="#CCCCCC" style=" margin-top:0px">
+                                    <ul>
+                                        <li>
+                                            Holds 25% of Nomura SITE through its Hong Kong subsidiary, Alpha Magnus Limited. 
+                                        </li>
+                                        <li>
+                                            Promoted by Ashwin Mehta, who was CEO of the company under its previous ownership, and is now Chairman of Nomura SITE.
+                                        </li>
+                                        <li>
+                                            The representatives of Allshores on the Board of the Company, have between them a total of over 60 years’ experience in financial services and have held senior regional leadership positions.
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="content_inner content_inner_c">
+                        <span class="title_red">Company Award List</span>
+                        <br>
+                        <table width="100%">
+                            <tr>
+                                <td style=" font-size: 15px; line-height: 1.7em; padding: 0px 7px 7px 7px; color: #333;">
+                                    <table width="100%" style=" border: #ccc 1px solid; border-collapse: collapse;">
+                                        <tr>
+                                            <td style=" font-size: 13px; color:  #fff; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background:#CE1F24; text-align: center; line-height: 1.7em;">Year</td>
+                                            <td style=" font-size: 14px; color:  #fff; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #CE1F24; line-height: 1.7em;text-align: center;">Award / Institution</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2016</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">Mixed Assets Group Award</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background: #999999">Lipper Fund Award Taiwan</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">
+                                                Taiwan Best Newcomer<br>
+                                                Taiwan Most Innovative Product
+                                            </td>
+                                        </tr> 
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background: #999999">Asia Asset Management</td>
+                                        </tr>                                                                                                                         
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2015</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">Mixed Assets Group Award</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background: #999999">Lipper Fund Award Taiwan</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2014</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">Mixed Assets Group Award</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background: #999999">Lipper Fund Award Taiwan</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2012</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">Taiwan Best Institutional House</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background:#999999">Asia Asset Management</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2011</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">Taiwan Best Institutional House</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background: #999999">Institution：Asia Asset Management</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2010</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">Taiwan Best Institutional House</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background: #999999">Asia Asset Management</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2009</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">Taiwan Best Institutional House
+                                                <br> Taiwan Best Community Service </td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background: #999999">Asia Asset Management</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff;text-align: center; line-height: 1.7em;">2008</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">Taiwan Fund House of the year
+                                                <br> Taiwan Equities One Year Performance </td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background: #999999">AsianInvestor</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff;text-align: center; line-height: 1.7em;">2007</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">Taiwan Fund House of the year</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background:#999999">AsianInvestor</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style=" font-size: 13px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #fff; text-align: center; line-height: 1.7em;">2006</td>
+                                            <td style=" font-size: 14px; color: #333; padding: 3px 7px; border: #ccc 1px solid; border-collapse: collapse; background: #eee; line-height: 1.7em;">Most Improved Institutional fund house</td>
+                                        </tr>
+                                        <tr>
+                                            <td style=" font-size: 14px; color: #fff; padding: 3px 7px;border: #ccc 1px solid; border-collapse: collapse; line-height: 1.7em;background: #999999">Asia Asset Management</td>
+                                        </tr>
+                                    </table>
+                                    <span style="font-size:11px;line-height:10px;margin-top:15px;">
+                                        Source：Lipper/ Asia Asset Mangement / AsianInvestor；<br>Date：2016/03
+                                    </span>                                         
+                                </td>                                
+                            </tr>
+                        </table>
+                    </div>                                                                              
+                  </div>
+                </div>            
+            </div>
+        </div>
+        <script type="text/javascript" src="../lib/jquery/jquery.min.js?rev=1473417876000"></script>
+        <script type="text/javascript" src="../lib/jquery-mobile/jquery.mobile.min.js?rev=1473417876000"></script>
+        <script type="text/javascript" src="../js/utils/constants.min.js?rev=1473417882000"></script>
+        <script type="text/javascript" src="../js/utils/mitake.extend.min.js?rev=1473417882000"></script>      
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', Constants.gaTrackingNumber, 'auto');
+            ga('send', 'pageview', {'title': 'aboutNomura'});
+        </script>                
+    </body>
+</html>
